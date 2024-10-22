@@ -98,3 +98,8 @@ for (const file of files) {
 ```ts skip
 await $`git restore .`
 ```
+
+## delete pages branch
+```ts skip
+await $`git branch -D pages`
+```
