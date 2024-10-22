@@ -73,14 +73,14 @@ for (const file of files) {
 ```
 
 ## commit and push
-```ts skip
+```ts
 await $`git add .`
 await $`git commit -m "deploy to github pages"`
 await $`git push origin pages -f`
 ```
 
 ## checkout main branch
-```ts skip
+```ts
 await $`git checkout main`
 ```
 
