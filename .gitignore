@@ -6,3 +6,4 @@ bun.lockb
 content/.pd/
 .nuxt
 .output
+dist/
