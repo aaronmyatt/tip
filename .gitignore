@@ -7,3 +7,4 @@ content/.pd/
 .nuxt
 .output
 dist/
+dist
