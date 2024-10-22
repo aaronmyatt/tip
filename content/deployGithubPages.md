@@ -86,10 +86,15 @@ await $`git checkout main`
 
 ## remove all output files
 ```ts
-const outputFiles = await Array.fromAsync($.path(Deno.cwd()).join('.output').readDirFilePaths());
+const outputFiles = await Array.fromAsync($.path('/tmp/pagescontent').readDirFilePaths());
 const files = await Array.fromAsync($.path(Deno.cwd()).readDirFilePaths());
 for (const file of files) {
     if(outputFiles.find(outputFile => outputFile.basename() === file.basename()))
         await $.path(file).remove();
 }
+```
+
+## restore all deleted files
+```ts skip
+await $`git restore .`
 ```
